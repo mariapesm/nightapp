@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #fefefe
+}
+
+body {
+  background-color: black;
+}
+
+.user, .header {
+  display: flex;
+  align-items: center;
+}
+
+.user * {
+  margin: 5px;
+}
+
+.user .text {
+  text-align: right;
+}
+
+.user .photo {
+  height: 100%;;
+  border-radius: 50%;
+}
+
+.header {
+  background-color: rgba(0,0,0,0.6);
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.auth-links {
+  font-size: large;
+  color: #1da1f2
+}
+
+.app-body {
+  text-align: center;
+}
+
+.search-bar {
+  margin-top: 100px;
+  align-self: flex-start;
+  background-color: transparent;
+  width: 33vw;
+  border: 1px solid #fefefe;
+  font-size: xx-large;
+  padding: 5px 10px;
+}
+
+.fa-search {
+  margin-left: 10px;
+}
+
+
+
+.search-form button {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.place-cards {
+  margin-top: 100px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 180px;
+  height: 220px;
+  margin: 10px;
+  border-radius: 5px;
+  background-size: cover;
+  transition: all 200ms ease-in;
+  transform: scale(1);
+}
+
+.card:hover {
+  z-index: 100;
+  transform: scale(1.5);
+  transition: all 200ms ease-in-out;
+  box-shadow: 0px 0px 150px #000000;
+}
+
+.going-button {
+  visibility: hidden;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  border-radius: 5px 5px 0px 0px;
+  flex-grow: 1;
+  padding: 5px;
+  transition: all 200ms ease-in-out;
+}
+
+.going-button > h1 {
+  font-weight: 500;
+}
+
+.card:hover > .going-button {
+  background-color: rgba(0,0,0,0.7);
+  visibility: visible;
+}
+
+.card-text {
+  border: 0;
+  outline: 0;
+  padding: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 0px 0px 5px 5px;
+  background-color: rgba(0,0,0,0.7);
+  flex-shrink: 0;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.card-text > * {
+  font-weight: 500;
+}
+
+/*                           */
+
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+ background: url('https://storage.googleapis.com/cover_video/Snapshots/The-DJ.jpg') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+   opacity: .5;
+}
+.stopfade { 
+   opacity: .2;
+}
+
+@media screen and (max-width: 500px) { 
+  div{width:70%;} 
+}
+@media screen and (max-device-width: 800px) {
+  html { background: url(https://storage.googleapis.com/cover_video/Snapshots/The-DJ.jpg) #000 no-repeat center center fixed; }
+  #bgvid { display: none; }
+}
