@@ -11,7 +11,7 @@ exports.search = (req, res, next) => {
     url: 'https://api.yelp.com/v3/businesses/search',
     qs: req.query,
     headers: {
-      Authorization: `Bearer ${configAuth.yelpToken}`
+      Authorization: `Bearer ${configAuth.VZhFPMXpYYNDfFSdXdQZ8yFJyO6YU_zG61j352IL-U5PyNKqa2fulZYHGPdT096kSrp0RMyJz5qstPMOha2oKVaHzQ9z-Yg07ivZOuZuNxWRs5tjeC8IurD-jk8qXHYx}`
     }
   };
 
